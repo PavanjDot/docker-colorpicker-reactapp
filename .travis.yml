@@ -7,7 +7,7 @@ before_install:
   - docker build -t pavanjdot/docker-colorpicker-reactapp -f Dockerfile.dev . 
 
 script: 
-  - docker run -e CI=true pavanjdot/docker-react npm run test
+  - docker run -e CI=true pavanjdot/docker-colorpicker-reactapp npm run test
 
 deploy:
   provider: elasticbeanstalk
